@@ -28,7 +28,7 @@ class PastryDetail extends PastryIndexView{
             <div class="pastry-details">
                 <!-- Pastry Image -->
                 <div class="pastry-image">
-                    <img src="<?= $image ?>" alt="<?= htmlspecialchars($name) ?>" style="width: 50px; height: 50px;">
+                    <img src="<?= $image ?>" alt="<?= htmlspecialchars($name)?>">
                 </div>
 
                 <!-- Pastry Info -->
@@ -42,14 +42,6 @@ class PastryDetail extends PastryIndexView{
                 </div>
             </div>
             <!-- Add to Cart Button -->
-            <form action="---.php" method="POST">
-                <input type="hidden" name="pastry_id" value="<?= $id ?>">
-                <input type="hidden" name="name" value="<?= $name ?>">
-                <input type="hidden" name="price" value="<?= $price ?>">
-                <input type="hidden" name="image" value="<?= $image ?>">
-                <input type="hidden" name="stock" value="<?= $stock ?>">
-                <button type="submit" class="btn-primary">Add to Cart</button>
-            </form>
 
             <!-- Navigation Link -->
             <a href="<?= BASE_URL ?>/pastry/menu" class="btn-primary">Go to Menu</a>

@@ -1,5 +1,5 @@
 /* General Reset */
-body, h1, h2, h3, p, ul, li, a, table, img {
+body, h1, h2, h3, p, ul, li, a, table {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
