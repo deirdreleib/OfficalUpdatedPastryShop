@@ -62,10 +62,27 @@ class PastryModel {
         // Execute the query
         $result = $this->dbConnection->query($sql);
 
-        if ($result && $result->num_rows > 0) {
-            return $result->fetch_assoc();
-        }
-        return null;
+        //if the result failed, return false
+        if (!$result->num_rows == 0)
+            return 0;
+        //handle the result
+        //create an array to store all returned pastries
+        $pastries = array();
+
+        //loop through all rows in returned recordsets
+        while ($row = $result->fetch_object()) {
+                $pastry = new Pastry(
+                    $row->category_id,
+                    $row->name,
+                    $row->description,
+                    $row->image_path,
+                    $row->price,
+                    $row->in_menu
+                );
+                $pastry->setPastryID($row->pastry_id);
+                $pastries[] = $pastry;
+            }
+        return $pastries;
     }
 
     // Method to get all pastries
