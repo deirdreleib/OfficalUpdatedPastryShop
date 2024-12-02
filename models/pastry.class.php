@@ -60,33 +60,33 @@ class Pastry{
     //Get Stock Quantity
 
     //Set name
-    public function setName(string $name): void {
-        $this->name = $name;
-    }
+   // public function setName(string $name): void {
+   //     $this->name = $name;
+   // }
     //Set Description
-    public function setDescription(?string $description): void {
-        $this->description = $description;
-    }
+   // public function setDescription(?string $description): void {
+   //     $this->description = $description;
+    //}
     //Set Price
-    public function setPrice(float $price): void {
-        $this->price = $price;
-    }
+    //public function setPrice(float $price): void {
+      //  $this->price = $price;
+    //}
     //Set Category ID
-    public function setCategoryId(int $categoryId): void {
-        $this->categoryId = $categoryId;
-    }
+    //public function setCategoryId(int $categoryId): void {
+      //  $this->categoryId = $categoryId;
+    //}
     //Set Availability
-    public function setInMenu(bool $in_menu): void {
-        $this->in_menu = $in_menu;
-    }
+    //public function setInMenu(bool $in_menu): void {
+      //  $this->in_menu = $in_menu;
+    //}
     //Set Image Path
-    public function setImagePath(?string $imagePath): void {
-        $this->imagePath = $imagePath;
-    }
+    //public function setImagePath(?string $imagePath): void {
+      //  $this->imagePath = $imagePath;
+    //}
     //Set Stock Quantity
-    public function setStockQuantity(int $stockQuantity): void {
-        $this->stockQuantity = $stockQuantity;
-    }
+    //public function setStockQuantity(int $stockQuantity): void {
+      //  $this->stockQuantity = $stockQuantity;
+    //}
 
     public function setPastryID(int $id) {
         $this->pastryId = $id;
