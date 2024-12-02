@@ -160,7 +160,7 @@ class PastryModel {
         // SQL update statement
         $sql = "UPDATE $this->table 
                 SET name = '$name', category_id = $categoryId, description = '$description', price = $price, 
-                 imagePath = '$imagePath', in_menu = '$in_menu'
+                 imagePath = '$imagePath', in_menu = '$inMenu'
                 WHERE pastry_id = $pastryId";
 
         // Execute the query and return the result
