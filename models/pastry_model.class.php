@@ -109,7 +109,7 @@ class PastryModel {
         //execute the query
         $result = $this->dbConnection->query($sql);
         //the search failed, return false
-        if (!result){
+        if (!$result){
             return false;
         }
         //the search succeeded, but no pastry was found.
